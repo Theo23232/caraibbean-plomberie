@@ -62,7 +62,7 @@ export const metadata: Metadata = {
       "Dépannage urgence, installation chauffe-eau, détection de fuite dans toute la Guadeloupe. Devis gratuit, intervention rapide.",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1606274741559-d3a98f24f88e?auto=format&fit=crop&w=1200&q=80",
+        url: "https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=1200&q=80",
         width: 1200,
         height: 630,
         alt: "Caraibbean Plomberie — Plombier en Guadeloupe",
@@ -96,7 +96,7 @@ const jsonLd = {
   telephone: SITE.phoneDisplayFull,
   priceRange: "€€",
   image:
-    "https://images.unsplash.com/photo-1606274741559-d3a98f24f88e?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=1200&q=80",
   address: {
     "@type": "PostalAddress",
     streetAddress: SITE.address.street,

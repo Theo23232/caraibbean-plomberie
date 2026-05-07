@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-[88vh] md:min-h-[92vh] flex items-center overflow-hidden">
       <Image
-        src="https://images.unsplash.com/photo-1606274741559-d3a98f24f88e?auto=format&fit=crop&w=2400&q=85"
+        src="https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=2400&q=85"
         alt="Plombier professionnel au travail"
         fill
         priority

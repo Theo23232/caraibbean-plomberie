@@ -73,7 +73,7 @@ export const SERVICES: Service[] = [
       "Outillage professionnel embarqué",
     ],
     image:
-      "https://images.unsplash.com/photo-1606274741559-d3a98f24f88e?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=1600&q=80",
   },
   {
     slug: "detection-fuites",
@@ -350,7 +350,7 @@ export const REALISATIONS: Realisation[] = [
     title: "Fuite alimentation — Goyave",
     description: "Remplacement d'une nourrice et de plusieurs flexibles d'alimentation.",
     image:
-      "https://images.unsplash.com/photo-1606274741559-d3a98f24f88e?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=1600&q=80",
     city: "Goyave",
   },
   {
