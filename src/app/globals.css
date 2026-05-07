@@ -1,26 +1,113 @@
 @import "tailwindcss";
 
+@theme {
+  --color-marine: #1e3a5f;
+  --color-marine-dark: #142a47;
+  --color-marine-light: #2c507e;
+  --color-eau: #2ba1d9;
+  --color-eau-dark: #1e7fae;
+  --color-eau-light: #5cbcec;
+  --color-action: #f59e0b;
+  --color-action-dark: #d98708;
+  --color-action-light: #fbbf24;
+  --color-gris-clair: #f8fafc;
+  --color-gris-text: #64748b;
+  --color-noir: #0f172a;
+
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-outfit), var(--font-inter), system-ui, sans-serif;
+  --font-bebas: var(--font-bebas), Impact, sans-serif;
+
+  --animate-pulse-soft: pulse-soft 2.4s ease-in-out infinite;
+  --animate-pulse-ring: pulse-ring 2.2s ease-out infinite;
+  --animate-float: float 3s ease-in-out infinite;
+}
+
+@keyframes pulse-soft {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 10px 30px -10px rgba(245, 158, 11, 0.6);
+  }
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 14px 36px -8px rgba(245, 158, 11, 0.85);
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0f172a;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+.font-bebas {
+  font-family: var(--font-bebas);
+  letter-spacing: 0.02em;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Subtle backdrop for hero overlays */
+.hero-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(30, 58, 95, 0.86) 0%,
+    rgba(20, 42, 71, 0.7) 60%,
+    rgba(43, 161, 217, 0.5) 100%
+  );
+}
+
+.section-divider {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+/* Container */
+.container-x {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  max-width: 1200px;
+}
+
+@media (min-width: 768px) {
+  .container-x {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
